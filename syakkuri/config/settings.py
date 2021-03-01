@@ -120,6 +120,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+ALLOWED_HOSTS = ["syakkuri.herokuapp.com"]
 
 DEBUG = False
 
