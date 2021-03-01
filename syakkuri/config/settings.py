@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'syakkuri.apps.SyakkuriConfig',
+    'tips.apps.TipsConfig',
 ]
 
 MIDDLEWARE = [
@@ -120,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-ALLOWED_HOSTS = ["syakkuri.herokuapp.com"]
+
 
 DEBUG = False
 
@@ -132,3 +133,5 @@ except ImportError:
 if not DEBUG:
     import django_heroku
     django_heroku.settings(locals())
+
+ALLOWED_HOSTS = ["syakkuri.herokuapp.com",'127.0.0.1']

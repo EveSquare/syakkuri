@@ -1,0 +1,45 @@
+{% extends 'syakkuri/base.html' %}
+
+{% block content %}
+
+<main>
+    <div class="container-fluid text-center" style="margin-top: 30px;">    
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+            </div>
+            <div class="col-sm-8 text-left"> 
+                <h1>しゃっくり - <small>hiccups</small></h1>
+                <p style="margin-top: 40px;">
+                    しゃっくりは熱いもの、冷たいものを急に飲んだりすると起こるものと言われています。
+                </p>
+                <p>
+                    従って、しゃっくりが出た時には熱いもの、冷たいものを飲むことは控えた方が良いでしょう。
+                </p>
+                <p>止まらなくなった時に以下を試してみると良いでしょう</p>
+                <ul style='list-style: none;'>
+                    <li>耳たぶを引っ張ってみる</li>
+                    <li>息を数十秒止める</li>
+                    <li><a href="/" style="text-decoration: none;">ゆっくり落ち着いて呼吸をする</a></li>
+                    <li>水を飲む</li>
+                    <li>横になる</li>
+                    <li>耳の穴を塞いで数十秒呼吸する</li>
+                    <li>酸っぱいものを食べてみる</li>
+                </ul>
+                <p>
+                    しゃっくりは数時間、または数日止まらなくなる場合もあります。
+                    しかし、しゃっくりが何日も止まらなくなっている状態であるとき、他の病気になっている可能性があります。
+                    そうなった時には、医師に診断することをお勧めします。
+                </p>
+                <hr>
+            </div>
+            {% comment %} <div class="col-sm-2 sidenav">
+            <div class="well">
+            </div>
+            </div> {% endcomment %}
+            <a href="{{request.META.HTTP_REFERER}}">戻る</a>
+        </div>
+    </div>
+</main>
+
+{% endblock content %}
+
